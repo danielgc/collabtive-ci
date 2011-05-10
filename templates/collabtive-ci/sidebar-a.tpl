@@ -83,7 +83,7 @@
     {if (isset($myprojects))}
         {if $projectnum > 0}
             <div class="content-right-in">      
-                <h2 class="mysidebar">My Projects</h2>
+                <h2 class="mysidebar">{#myprojects#}</h2>
                 <div id="projectlist-sidebar">
                     <ul>
                         {section name=project loop=$myprojects}
