@@ -391,7 +391,7 @@ class project {
         
         /* DAMIAN - START */
         //$sel = mysql_query("SELECT projekt FROM projekte_assigned WHERE user = $user ORDER BY ID ASC");
-        $sel = mysql_query("SELECT projekte_assigned.projekt FROM projekte_assigned, projekte WHERE projekte_assigned.projekt = projekte.id and projekte_assigned.user = 1 ORDER BY projekte.name ASC;");
+        $sel = mysql_query("SELECT projekte_assigned.projekt FROM projekte_assigned, projekte WHERE projekte_assigned.projekt = projekte.id and projekte_assigned.user = $user ORDER BY projekte.name ASC;");
         /* DAMIAN - END */
         
         while ($projs = mysql_fetch_row($sel)) {
